@@ -12,8 +12,7 @@ function App() {
     <>
     <Navbar></Navbar>
    <header>
-    <DaisyNav>
-    </DaisyNav>
+   
    </header>
       
     </>
