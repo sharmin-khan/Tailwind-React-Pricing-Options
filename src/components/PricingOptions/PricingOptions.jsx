@@ -9,8 +9,8 @@ const PricingOptions = ({pricingPromise}) => {
 
     return (
         <div>
-            <h2 className='text-3xl'>Get our MemberShip</h2>
-            <div className='grid grid-cols-3 gap-4'>
+            <h2 className='text-4xl text-gray-800 py-5'>Get our MemberShip</h2>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
                     pricingData.map(pricing => <PricingCard key={pricing.id} pricing={pricing}></PricingCard>)
                 }

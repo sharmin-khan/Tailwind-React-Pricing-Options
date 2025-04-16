@@ -40,7 +40,7 @@ const Navbar = () => {
   const Links =  NavigationData.map(route => <Link key={route.id} route={route}></Link>)
 
     return (
-        <nav className='flex justify-between mx-10 mt-6 text-lg'>
+        <nav className='flex justify-between items-center py-4 px-10 bg-amber-100 text-lg '>
           <span className='flex' onClick={() => setOpen(!open)}>
             {
             open ?
@@ -53,14 +53,14 @@ const Navbar = () => {
               {Links}
             </ul>
 
-            <h1 className='hidden lg:block'>Navbar</h1>
+            <h1 className='hidden lg:block text-2xl font-bold text-gray-800'>Navbar</h1>
           </span>
         <ul className='md:flex hidden'>
         {
            Links
           }
         </ul>
-        <button>Sign In</button>
+        <button className='btn rounded-lg text-lg font-medium '>Sign In</button>
         </nav>
     );
 };

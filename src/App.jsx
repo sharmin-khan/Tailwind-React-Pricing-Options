@@ -14,7 +14,7 @@ function App() {
     <>
     <Navbar></Navbar>
     <header>
-      <main>
+      <main className='px-10'>
         <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
           <PricingOptions pricingPromise= {pricingPromise}></PricingOptions>
         </Suspense>
